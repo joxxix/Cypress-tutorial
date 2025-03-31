@@ -1,0 +1,11 @@
+{
+    "cardNumber": "4242424242424242",
+    "cardNumberFailedPath": "4000000000000002",
+    "threeDSFlow": "4000000000003220",
+    "threeDSFlowFailedPayment": "4000008400001629",
+    "CVC": "123",
+    "expiryDate": "12/28",
+    "invalidCardNumber": "1234567887654321",
+    "invalidExpiryDate": "12/21",
+    "nameOnCard": "visa"
+}
