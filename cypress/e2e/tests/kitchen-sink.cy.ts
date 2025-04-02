@@ -18,10 +18,12 @@ describe('kitchen sink commands actions', () => {
         navigation.goTocommandsActionsPage()
     })
 
-    it('testing type()', () => {
-        commandElements.getActionEmail.type('fake@email.com')
-        commandElements.getActionEmail.should('have.value', 'fake@email.com')
-    })
+    it('testing type() using fixture data', () => {
+        cy.fixture('example').then((testData) => {
+          commandElements.getActionEmail.type(testData.email);
+          commandElements.getActionEmail.should('have.value', testData.email);
+        })
+      })
 
     it('testing focus()', () => {
         commandElements.getActionFocus.focus()
